@@ -5,6 +5,10 @@ cases = [
   "case number": "1"},
   {"name": "Science Lab",
   "case number": "2"}]
+  
+for case in cases:
+  total_case = len(case)
+  
 
 def typingPrint(text):
   for char in text:
@@ -23,5 +27,9 @@ def typingInput(text):
     
 typingPrint("Hi Detective")
 time.sleep(1)
-typingPrint("You have 2 cases")
+print("")
+typingPrint("You have " + str(total_case) + " remaining cases")
 time.sleep(1)
+print("")
+print(cases)
+
